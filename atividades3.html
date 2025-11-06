@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeiras com HTML e CSS</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .bandeira {
+            
+            width: 300px;
+            height: 200px;
+            border: 1px solid #ccc; 
+            display: flex;
+            overflow: hidden; 
+        }
+
+        
+        .franca {
+            
+            display: flex;
+        }
+
+        .franca div {
+           
+            flex: 1;
+        }
+
+        .franca .azul { background-color: #002395; } 
+        .franca .branco { background-color: #FFFFFF; }
+        .franca .vermelho { background-color: #ED2939; } 
+
+       
+        .alemanha {
+            
+            flex-direction: column;
+        }
+
+        .alemanha div {
+            
+            flex: 1;
+        }
+
+        .alemanha .preto { background-color: #000000; }
+        .alemanha .vermelho-alemanha { background-color: #DD0000; } 
+        .alemanha .amarelo-alemanha { background-color: #FFCC00; }
+
+       
+        .japao {
+            
+            justify-content: center;
+            align-items: center;
+            background-color: #FFFFFF; 
+           
+        }
+
+        .japao .circulo {
+            background-color: #BC002D; 
+            
+            width: 120px; 
+            height: 120px;
+            border-radius: 50%; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bandeiras com HTML e CSS</h1>
+
+    <section>
+        <h2>França</h2>
+        
+        <div class="bandeira franca" aria-label="Bandeira da França: três faixas verticais azul, branca e vermelha">
+            <div class="azul" title="Azul"></div>
+            <div class="branco" title="Branco"></div>
+            <div class="vermelho" title="Vermelho"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Alemanha</h2>
+        <div class="bandeira alemanha" aria-label="Bandeira da Alemanha: três faixas horizontais preta, vermelha e amarela">
+            <div class="preto" title="Preto"></div>
+            <div class="vermelho-alemanha" title="Vermelho"></div>
+            <div class="amarelo-alemanha" title="Amarelo"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Japão</h2>
+        <div class="bandeira japao" aria-label="Bandeira do Japão: fundo branco com um círculo vermelho centralizado">
+            <div class="circulo" title="Círculo Vermelho"></div>
+        </div>
+    </section>
+
+</body>
+</html>
